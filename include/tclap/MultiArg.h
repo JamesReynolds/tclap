@@ -338,13 +338,11 @@ bool MultiArg<T>::processArg(int *i, std::vector<std::string>& args)
 		else
 			_extractValue( value );
 
-		/*
 		// continuing taking the args until we hit one with a start string 
 		while ( (unsigned int)(*i)+1 < args.size() &&
 				args[(*i)+1].find_first_of( Arg::flagStartString() ) != 0 &&
 		        args[(*i)+1].find_first_of( Arg::nameStartString() ) != 0 ) 
 				_extractValue( args[++(*i)] );
-		*/
 
 		_alreadySet = true;
 		_checkWithVisitor();
