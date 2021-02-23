@@ -44,7 +44,7 @@ private:
 
 inline void OptionalUnlabeledTracker::check(bool req,
                                             const std::string &argName) {
-    if (OptionalUnlabeledTracker::alreadyOptional())
+    if (req && OptionalUnlabeledTracker::alreadyOptional())
         throw(SpecificationException(
             "You can't specify ANY Unlabeled Arg following an optional "
             "Unlabeled Arg",
