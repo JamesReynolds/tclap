@@ -1,9 +1,9 @@
-PARSE ERROR: Argument: -a (--atmc)
-             Mutually exclusive argument already set!
+PARSE ERROR: Argument: -a AND -b provided.
+             Only one is allowed.
 
 Brief USAGE: 
-   ../examples/test20  {-a|-b} [--] [--version] [-h]
+   test20  [-h] [--version] {-a|-b}
 
 For complete USAGE and HELP type: 
-   ../examples/test20 --help
+   test20 --help
 

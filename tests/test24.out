@@ -1,11 +1,11 @@
-PARSE ERROR: Argument: -b (--bbb)
-             Mutually exclusive argument already set!
+PARSE ERROR: Argument: --aaa AND -b provided.
+             Only one is allowed.
 
 Brief USAGE: 
-   ../examples/test5  {-a <string>|-b <string>} {--eee <string>|--fff
-                      <string>|-g <string>} {-i <string> ...|-j <string>
-                      ...} [--ddd] -c <string> [--] [--version] [-h]
+   test5  [-h] [--ddd] [--version] {-a <string>|-b <string>} {-g <string>|
+          --eee <string>|--fff <string>} {-i <string> ...|-j <string> ...}
+          -c <string>
 
 For complete USAGE and HELP type: 
-   ../examples/test5 --help
+   test5 --help
 

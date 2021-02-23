@@ -14,14 +14,16 @@
 <refsynopsisdiv>
 <cmdsynopsis>
 <command>test25</command>
-<group choice='req'>
-<arg choice='plain'>-s <replaceable>string</replaceable></arg>
-<arg choice='plain'>-B</arg>
-</group>
 <arg choice='opt' rep='repeat'>-A <replaceable></replaceable></arg>
+<group choice='req'>
+<arg choice='opt'>-s <replaceable>string</replaceable></arg>
+<arg choice='opt'>-B</arg>
+</group>
+<group choice='plain'>
 <arg choice='opt'>--</arg>
 <arg choice='opt'>--version</arg>
 <arg choice='opt'>-h</arg>
+</group>
 </cmdsynopsis>
 </refsynopsisdiv>
 <refsect1>
@@ -48,19 +50,6 @@ exist Test A
 </varlistentry>
 <varlistentry>
 <term>
-<option>-B</option>
-</term>
-<term>
-<option>--sB</option>
-</term>
-<listitem>
-<para>
-(OR required)  exist Test B
-</para>
-</listitem>
-</varlistentry>
-<varlistentry>
-<term>
 <option>-s</option>
 </term>
 <term>
@@ -68,7 +57,20 @@ exist Test A
 </term>
 <listitem>
 <para>
-(OR required)  string test
+string test
+</para>
+</listitem>
+</varlistentry>
+<varlistentry>
+<term>
+<option>-B</option>
+</term>
+<term>
+<option>--sB</option>
+</term>
+<listitem>
+<para>
+exist Test B
 </para>
 </listitem>
 </varlistentry>
